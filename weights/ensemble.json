@@ -1,0 +1,11 @@
+{
+  "description": "검증 PESQ-WB 기준으로 고른 가중 앙상블. weight는 실행 시 합이 1이 되도록 정규화됩니다.",
+  "members": [
+    {"name": "dpcrn_large", "model": "DPCRNLarge", "file": "dpcrn_large.pt", "weight": 0.45, "validation_pesq_wb": 2.7312},
+    {"name": "dpcrn_a",     "model": "DPCRN",      "file": "dpcrn_a.pt",     "weight": 0.30, "validation_pesq_wb": 2.7063},
+    {"name": "dpcrn_b",     "model": "DPCRN",      "file": "dpcrn_b.pt",     "weight": 0.15, "validation_pesq_wb": 2.6344},
+    {"name": "bilstm_a",    "model": "CRMBiLSTM",  "file": "bilstm_a.pt",    "weight": 0.05, "validation_pesq_wb": 2.2772},
+    {"name": "bilstm_b",    "model": "CRMBiLSTM",  "file": "bilstm_b.pt",    "weight": 0.05, "validation_pesq_wb": 2.2539}
+  ],
+  "validation_pesq_wb": {"ensemble": 2.8194, "ensemble_with_tta": 2.8269}
+}

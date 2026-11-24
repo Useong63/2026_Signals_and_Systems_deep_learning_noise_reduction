@@ -1,0 +1,14 @@
+# 개인 음성이 포함된 학습·검증 데이터와 캐시는 공개 저장소에 올리지 않습니다.
+train/
+validation/
+.waveform_cache/
+outputs/previews/
+
+# 테스트 입력·출력 WAV는 올리지 않고 빈 폴더만 유지합니다.
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
+__pycache__/
+.ipynb_checkpoints/
